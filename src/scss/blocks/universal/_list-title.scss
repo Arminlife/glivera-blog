@@ -1,0 +1,14 @@
+.list-title {
+  font-size: 1.4rem;
+  letter-spacing: 0.06rem;
+  font-weight: 500;
+  color: #323642;
+  text-transform: uppercase;
+
+  &--link {
+    transition: color 0.2s linear;
+    &:hover {
+      color: $color_link_accent;
+    }
+  }
+}

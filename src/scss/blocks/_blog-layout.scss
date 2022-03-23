@@ -1,0 +1,25 @@
+.blog {
+	&__header {
+		margin-bottom: 4rem;
+	}
+	&__wrapper {
+		display: grid;
+		grid-template-columns: 74rem 40.1rem;
+		gap: 6rem;
+		margin-bottom: 3rem;
+	}
+	&__sidebar {
+		padding: 0 0 0 6rem;
+		border-left: 1px solid #ebeced;
+	}
+	@include bp($point_2) {
+		&__wrapper{
+			grid-template-columns: 1fr;
+			gap: 3rem;
+		}
+		&__sidebar{
+			padding-left: 0;
+			border: none;
+		}
+	}
+}

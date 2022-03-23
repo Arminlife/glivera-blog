@@ -1,0 +1,24 @@
+.category-link {
+	font-size: 1.2rem;
+	color: $color_link_accent;
+	text-transform: uppercase;
+	transition: all 0.2s linear;
+	&:hover {
+		color: $color_link_focus;
+	}
+	&__list {
+		display: flex;
+		align-items: center;
+	}
+	&__item {
+		position: relative;
+		margin-right: 0.3rem;
+		&:last-child {
+			margin-right: 0;
+		}
+		&:not(:last-child):after {
+			content: ",";
+			color: $color_link_accent;
+		}
+	}
+}

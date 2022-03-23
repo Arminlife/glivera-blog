@@ -1,0 +1,50 @@
+.simple-list {
+	position: relative;
+	display: flex;
+	align-items: center;
+	margin: 0 -1.8rem;
+
+	&__item {
+		margin: 0 1.8rem;
+	}
+
+	&__link {
+		display: block;
+		font-size: 1.4rem;
+		letter-spacing: 0.5px;
+		font-weight: 500;
+		text-transform: uppercase;
+		color: $color_link_accent;
+		transition: color 0.2s linear;
+		&:hover {
+			color: $color_link_focus;
+		}
+	}
+	@include bp($point_2){
+		max-width: 60rem;
+		overflow-x: auto;
+		padding-bottom: 0.5rem;
+		margin-bottom: -0.5rem;
+		&::-webkit-scrollbar-thumb {
+			background: #ccc;
+			border-radius: 2px;
+		}
+		&::-webkit-scrollbar {
+			width: 2px;
+			height: 2px;
+			background-color: #E9E9E9;
+		}
+		&__item{
+			&:first-child{
+				margin-left: 0;
+			}
+		}
+	}
+	@include bp($point_6) {
+		max-width: 100%;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 0.5rem;
+		overflow: hidden;
+	}
+}
