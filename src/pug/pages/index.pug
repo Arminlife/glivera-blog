@@ -16,7 +16,7 @@ block vars
 	-		{
 	-			title: 'The Internet Cannot be Trusted – Beamsplitters, Backdoors, and Broken Promises', 
 	-			link:'#', 
-	-			image: '/images/article1.jpg',
+	-			image: './images/article1.jpg',
 	-			author: 'Derek Zimmer',
 	-			date: 'JUL 25, 2018',
 	-			categories: [{name: 'Governments', link: '#'}, {name: 'Networking', link: '#'}, {name: 'Open Source', link: '#'}, {name: 'Privacy', link: '#'}, {name: 'Security', link: '#'}] 
@@ -24,7 +24,7 @@ block vars
 	-		{
 	-			title: 'How to get cheaper flights using a VPN', 
 	-			link:'#', 
-	-			image: '/images/article2.jpg',
+	-			image: './images/article2.jpg',
 	-			author: 'Jayson',
 	-			date: 'JUL 24, 2018',
 	-			categories: [{name: 'Guides', link: '#'}] 
@@ -32,7 +32,7 @@ block vars
 	-		{
 	-			title: 'Net Neutrality was repealed, but the fight is far from over', 
 	-			link:'#', 
-	-			image: '/images/article3.jpg',	
+	-			image: './images/article3.jpg',	
 	-			author: 'Chris Miller',
 	-			date: 'JUL 22, 2018',
 	-			categories: [{name: 'Governments', link: '#'}, {name: 'Net Neutrality', link: '#'}, {name: 'News', link: '#'}] 	
@@ -40,7 +40,7 @@ block vars
 	-		{
 	-			title: 'The Internet Cannot be Trusted – Beamsplitters, Backdoors, and Broken Promises', 
 	-			link:'#', 
-	-			image: '/images/article1.jpg',	
+	-			image: './images/article1.jpg',	
 	-			author: 'Derek Zimmer',
 	-			date: 'JUL 25, 2018',
 	-			categories: [{name: 'Governments', link: '#'}, {name: 'Networking', link: '#'}, {name: 'Open Source', link: '#'}, {name: 'Privacy', link: '#'}, {name: 'Security', link: '#'}] 
@@ -48,7 +48,7 @@ block vars
 	-		{
 	-			title: 'How to get cheaper flights using a VPN', 
 	-			link:'#', 
-	-			image: '/images/article2.jpg',	
+	-			image: './images/article2.jpg',	
 	-			author: 'Jayson',
 	-			date: 'JUL 24, 2018',
 	-			categories: [{name: 'Guides', link: '#'}] 
@@ -56,7 +56,7 @@ block vars
 	-		{
 	-			title: 'Net Neutrality was repealed, but the fight is far from over', 
 	-			link:'#', 
-	-			image: '/images/article3.jpg',	
+	-			image: './images/article3.jpg',	
 	-			author: 'Chris Miller',
 	-			date: 'JUL 22, 2018',
 	-			categories: [{name: 'Governments', link: '#'}, {name: 'Net Neutrality', link: '#'}, {name: 'News', link: '#'}] 	
@@ -113,7 +113,7 @@ block content_block
 								a.comment-counter(href='#')
 									.comment-counter__value 0
 									.comment-counter__icon 
-										svg #[use(xlink:href='/images/sprite/sprite.svg#comment')]
+										svg #[use(xlink:href='./images/sprite/sprite.svg#comment')]
 				.more-btn
 					.btn.btn--bordered older posts
 			aside.blog__sidebar
@@ -121,7 +121,7 @@ block content_block
 					form(action="#", method="post") 
 						.icon-input
 							.icon-input__icon
-								svg #[use(xlink:href='/images/sprite/sprite.svg#search')]
+								svg #[use(xlink:href='./images/sprite/sprite.svg#search')]
 							.icon-input__field
 								+form_input({
 									type: 'text',
@@ -133,7 +133,7 @@ block content_block
 				.sidebar-widget 
 					.sidebar-widget__title.widget-title 
 						.widget-title__icon 
-							svg #[use(xlink:href='/images/sprite/sprite.svg#light')]
+							svg #[use(xlink:href='./images/sprite/sprite.svg#light')]
 						.widget-title__title Announcements
 					.sidebar-widget__list
 						ul.widget-list 
@@ -143,7 +143,7 @@ block content_block
 				.sidebar-widget 
 					.sidebar-widget__title.widget-title 
 						.widget-title__icon 
-							svg #[use(xlink:href='/images/sprite/sprite.svg#rss')]
+							svg #[use(xlink:href='./images/sprite/sprite.svg#rss')]
 						.widget-title__title Popular posts
 					.sidebar-widget__list
 						ul.widget-list 
@@ -153,11 +153,11 @@ block content_block
 				.sidebar-widget
 					.sidebar-widget__banner
 						a.banner-link(href="#")
-							img.lazy(data-src="/images/sidebar-banner.jpg", alt="")
+							img.lazy(data-src="./images/sidebar-banner.jpg", alt="")
 
 				.sidebar-widget
 					.sidebar-widget__title.widget-title 
 						.widget-title__title Tag cloud			
 					.sidebar-widget__banner
 						a.banner-link(href="#")
-							img.lazy(data-src="/images/tagcloud.jpg", alt="")
+							img.lazy(data-src="./images/tagcloud.jpg", alt="")
