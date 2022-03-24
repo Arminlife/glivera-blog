@@ -6,7 +6,7 @@ import pageWidgetInit from './dev_vendors/dev_widget';
 // ------------------- imports###
 
 // ------------------  import components
-import BlogPage from './components/blog-page';
+import HeaderMenu from './components/header_menu';
 // ------------------  import components###
 
 window.jQuery = $;
@@ -33,7 +33,7 @@ const readyFunc = () => {
 const loadFunc = () => {
 	console.log('page load');
 	// init componets
-	let blogPage = new BlogPage('[data-blog]');
+	let headerMenu = new HeaderMenu('.simple_header');
 };
 
 documentReady(() => {

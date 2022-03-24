@@ -9,16 +9,7 @@
 
 html {
 	height: 100%;
-	font: 400 calc(100vw / 1920 * 10) / 1.33 $font_1;
-	@include bp(1400px) {
-		font: 400 calc(100vw / 1400 * 10) / 1.33 $font_1;
-	}
-	@include bp($point_2) {
-		font: 400 calc(100vw / 1024 * 10) / 1.33 $font_1;
-	}
-	@include bp($point_6) {
-		font: 400 calc(100vw / 480 * 10) / 1.33 $font_1;
-	}
+	font: 400 10px / 1.33 $font_1;
 }
 
 body {
@@ -75,7 +66,7 @@ a {
 	max-width: 100%;
 	margin-left: auto;
 	margin-right: auto;
-	@include bp($point_2) {
+	@include bp($point_1) {
 		width: 100%;
 		padding: 0 3rem;
 	}
@@ -84,23 +75,11 @@ a {
 	}
 }
 
-.page-title {
+.page_title {
 	display: block;
 	margin-bottom: 4rem;
 	font-size: 3.2rem;
 	font-weight: 300;
 }
 
-img.lazy {
-	-webkit-filter: blur(15px);
-	filter: blur(15px);
-	transition: filter 400ms, -webkit-filter 400ms;
-}
-
-img.initial,
-img.loaded,
-img.error {
-	-webkit-filter: blur(0);
-	filter: blur(0);
-}
 //------------------------------------------------------------base styles###

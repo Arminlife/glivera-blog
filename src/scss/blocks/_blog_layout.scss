@@ -12,10 +12,18 @@
 		padding: 0 0 0 6rem;
 		border-left: 1px solid #ebeced;
 	}
+	@include bp($point_1){
+		&__wrapper{
+			grid-template-columns: 2fr 1fr;
+			gap: 3rem;
+		}
+		&__sidebar{
+			padding-left: 3rem;
+		}
+	}
 	@include bp($point_2) {
 		&__wrapper{
 			grid-template-columns: 1fr;
-			gap: 3rem;
 		}
 		&__sidebar{
 			padding-left: 0;

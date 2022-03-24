@@ -29,179 +29,200 @@
     <meta name="msapplication-config" content="/browserconfig.xml">
   <link href="css/app.css" rel="stylesheet"></head>
   <body>
-    <header class="header"></header>
     <div class="wrapper">
       <div class="base">
         <div class="container"> 
-          <div class="simple-header blog__header"> 
-            <div class="simple-header__item"> 
-              <div class="list-title">Tags: </div>
-              <ul class="simple-list">
-                <li class="simple-list__item"><a class="simple-list__link" href="#">bitcoin</a></li>
-                <li class="simple-list__item"><a class="simple-list__link" href="#">bittorrent</a></li>
-                <li class="simple-list__item"><a class="simple-list__link" href="#">irc</a></li>
-                <li class="simple-list__item"><a class="simple-list__link" href="#">news</a></li>
-                <li class="simple-list__item"><a class="simple-list__link" href="#">privacy</a></li>
-                <li class="simple-list__item"><a class="simple-list__link" href="#">programming</a></li>
-                <li class="simple-list__item"><a class="simple-list__link" href="#">security</a></li>
-              </ul>
-            </div>
-            <div class="simple-header__item"> 
-              <ul class="simple-list">
-                <li class="simple-list__item"><a class="list-title list-title--link" href="#">Team </a></li>
-                <li class="simple-list__item"><a class="list-title list-title--link" href="#">Contact					</a></li>
-              </ul>
+          <div class="simple_header blog__header"> <span class="simple_header__trigger"><span></span><span></span><span></span></span>
+            <div class="simple_header__inner">
+              <div class="simple_header__item"> 
+                <div class="list_title">Tags: </div>
+                <ul class="simple_list">
+                  <li class="simple_list__item"><a class="simple_list__link" href="#">bitcoin</a></li>
+                  <li class="simple_list__item"><a class="simple_list__link" href="#">bittorrent</a></li>
+                  <li class="simple_list__item"><a class="simple_list__link" href="#">irc</a></li>
+                  <li class="simple_list__item"><a class="simple_list__link" href="#">news</a></li>
+                  <li class="simple_list__item"><a class="simple_list__link" href="#">privacy</a></li>
+                  <li class="simple_list__item"><a class="simple_list__link" href="#">programming</a></li>
+                  <li class="simple_list__item"><a class="simple_list__link" href="#">security</a></li>
+                </ul>
+              </div>
+              <div class="simple_header__item"> 
+                <ul class="simple_list">
+                  <li class="simple_list__item"><a class="list_title list_title--link" href="#">Team </a></li>
+                  <li class="simple_list__item"><a class="list_title list_title--link" href="#">Contact					</a></li>
+                </ul>
+              </div>
             </div>
           </div>
           <div class="blog__wrapper" data-blog>
             <main class="blog__content"> 
-              <h1 class="page-title">Recent posts</h1>
-              <article class="article-card">
-                <picture class="article-card__picture"><img class="lazy article-card__img" alt="" data-src="./images/article1.jpg"></picture>
-                <div class="article-card__content"> 
-                  <h2 class="article-card__title"><a class="article-card__link" href="#">The Internet Cannot be Trusted – Beamsplitters, Backdoors, and Broken Promises</a></h2>
-                  <div class="article-card__meta">
-                    <div class="article-card__author">Derek Zimmer</div>
-                    <div class="article-card__date">JUL 25, 2018</div>
+              <h1 class="page_title">Recent posts</h1>
+              <div class="article_list">
+                <article class="article_card">
+                  <picture class="article_card__picture">
+                    <source srcset="./images/article1.jpg.webp" type="image/webp">
+                    <source srcset="./images/article1.jpg" type="image/jpg"><img class="article_card__img" src="./images/article1.jpg" alt="">
+                  </picture>
+                  <div class="article_card__content"> 
+                    <h2 class="article_card__title"><a class="article_card__link" href="#">The Internet Cannot be Trusted – Beamsplitters, Backdoors, and Broken Promises</a></h2>
+                    <div class="article_card__meta">
+                      <div class="article_card__author">Derek Zimmer</div>
+                      <div class="article_card__date">JUL 25, 2018</div>
+                    </div>
+                    <ul class="article_card__categories category_link__list">
+                      <li class="category_link__item"><a class="category_link" href="#">Governments</a></li>
+                      <li class="category_link__item"><a class="category_link" href="#">Networking</a></li>
+                      <li class="category_link__item"><a class="category_link" href="#">Open Source</a></li>
+                      <li class="category_link__item"><a class="category_link" href="#">Privacy</a></li>
+                      <li class="category_link__item"><a class="category_link" href="#">Security</a></li>
+                    </ul>
+                    <div class="article_card__comments"><a class="comment_counter" href="#">
+                        <div class="comment_counter__value">0</div>
+                        <div class="comment_counter__icon"> 
+                          <svg class="icon icon_comment ">
+                            <use xlink:href="./images/sprite/sprite.svg#comment"></use>
+                          </svg>
+                        </div></a></div>
                   </div>
-                  <ul class="article-card__categories category-link__list">
-                    <li class="category-link__item"><a class="category-link" href="#">Governments</a></li>
-                    <li class="category-link__item"><a class="category-link" href="#">Networking</a></li>
-                    <li class="category-link__item"><a class="category-link" href="#">Open Source</a></li>
-                    <li class="category-link__item"><a class="category-link" href="#">Privacy</a></li>
-                    <li class="category-link__item"><a class="category-link" href="#">Security</a></li>
-                  </ul>
-                  <div class="article-card__comments"><a class="comment-counter" href="#">
-                      <div class="comment-counter__value">0</div>
-                      <div class="comment-counter__icon"> 
-                        <svg>
-                          <use xlink:href="./images/sprite/sprite.svg#comment"></use>
-                        </svg>
-                      </div></a></div>
-                </div>
-              </article>
-              <article class="article-card">
-                <picture class="article-card__picture"><img class="lazy article-card__img" alt="" data-src="./images/article2.jpg"></picture>
-                <div class="article-card__content"> 
-                  <h2 class="article-card__title"><a class="article-card__link" href="#">How to get cheaper flights using a VPN</a></h2>
-                  <div class="article-card__meta">
-                    <div class="article-card__author">Jayson</div>
-                    <div class="article-card__date">JUL 24, 2018</div>
+                </article>
+                <article class="article_card">
+                  <picture class="article_card__picture">
+                    <source srcset="./images/article2.jpg.webp" type="image/webp">
+                    <source srcset="./images/article2.jpg" type="image/jpg"><img class="article_card__img" src="./images/article2.jpg" alt="">
+                  </picture>
+                  <div class="article_card__content"> 
+                    <h2 class="article_card__title"><a class="article_card__link" href="#">How to get cheaper flights using a VPN</a></h2>
+                    <div class="article_card__meta">
+                      <div class="article_card__author">Jayson</div>
+                      <div class="article_card__date">JUL 24, 2018</div>
+                    </div>
+                    <ul class="article_card__categories category_link__list">
+                      <li class="category_link__item"><a class="category_link" href="#">Guides</a></li>
+                    </ul>
+                    <div class="article_card__comments"><a class="comment_counter" href="#">
+                        <div class="comment_counter__value">0</div>
+                        <div class="comment_counter__icon"> 
+                          <svg class="icon icon_comment ">
+                            <use xlink:href="./images/sprite/sprite.svg#comment"></use>
+                          </svg>
+                        </div></a></div>
                   </div>
-                  <ul class="article-card__categories category-link__list">
-                    <li class="category-link__item"><a class="category-link" href="#">Guides</a></li>
-                  </ul>
-                  <div class="article-card__comments"><a class="comment-counter" href="#">
-                      <div class="comment-counter__value">0</div>
-                      <div class="comment-counter__icon"> 
-                        <svg>
-                          <use xlink:href="./images/sprite/sprite.svg#comment"></use>
-                        </svg>
-                      </div></a></div>
-                </div>
-              </article>
-              <article class="article-card">
-                <picture class="article-card__picture"><img class="lazy article-card__img" alt="" data-src="./images/article3.jpg"></picture>
-                <div class="article-card__content"> 
-                  <h2 class="article-card__title"><a class="article-card__link" href="#">Net Neutrality was repealed, but the fight is far from over</a></h2>
-                  <div class="article-card__meta">
-                    <div class="article-card__author">Chris Miller</div>
-                    <div class="article-card__date">JUL 22, 2018</div>
+                </article>
+                <article class="article_card">
+                  <picture class="article_card__picture">
+                    <source srcset="./images/article3.jpg.webp" type="image/webp">
+                    <source srcset="./images/article3.jpg" type="image/jpg"><img class="article_card__img" src="./images/article3.jpg" alt="">
+                  </picture>
+                  <div class="article_card__content"> 
+                    <h2 class="article_card__title"><a class="article_card__link" href="#">Net Neutrality was repealed, but the fight is far from over</a></h2>
+                    <div class="article_card__meta">
+                      <div class="article_card__author">Chris Miller</div>
+                      <div class="article_card__date">JUL 22, 2018</div>
+                    </div>
+                    <ul class="article_card__categories category_link__list">
+                      <li class="category_link__item"><a class="category_link" href="#">Governments</a></li>
+                      <li class="category_link__item"><a class="category_link" href="#">Net Neutrality</a></li>
+                      <li class="category_link__item"><a class="category_link" href="#">News</a></li>
+                    </ul>
+                    <div class="article_card__comments"><a class="comment_counter" href="#">
+                        <div class="comment_counter__value">0</div>
+                        <div class="comment_counter__icon"> 
+                          <svg class="icon icon_comment ">
+                            <use xlink:href="./images/sprite/sprite.svg#comment"></use>
+                          </svg>
+                        </div></a></div>
                   </div>
-                  <ul class="article-card__categories category-link__list">
-                    <li class="category-link__item"><a class="category-link" href="#">Governments</a></li>
-                    <li class="category-link__item"><a class="category-link" href="#">Net Neutrality</a></li>
-                    <li class="category-link__item"><a class="category-link" href="#">News</a></li>
-                  </ul>
-                  <div class="article-card__comments"><a class="comment-counter" href="#">
-                      <div class="comment-counter__value">0</div>
-                      <div class="comment-counter__icon"> 
-                        <svg>
-                          <use xlink:href="./images/sprite/sprite.svg#comment"></use>
-                        </svg>
-                      </div></a></div>
-                </div>
-              </article>
-              <article class="article-card">
-                <picture class="article-card__picture"><img class="lazy article-card__img" alt="" data-src="./images/article1.jpg"></picture>
-                <div class="article-card__content"> 
-                  <h2 class="article-card__title"><a class="article-card__link" href="#">The Internet Cannot be Trusted – Beamsplitters, Backdoors, and Broken Promises</a></h2>
-                  <div class="article-card__meta">
-                    <div class="article-card__author">Derek Zimmer</div>
-                    <div class="article-card__date">JUL 25, 2018</div>
+                </article>
+                <article class="article_card">
+                  <picture class="article_card__picture">
+                    <source srcset="./images/article1.jpg.webp" type="image/webp">
+                    <source srcset="./images/article1.jpg" type="image/jpg"><img class="article_card__img" src="./images/article1.jpg" alt="">
+                  </picture>
+                  <div class="article_card__content"> 
+                    <h2 class="article_card__title"><a class="article_card__link" href="#">The Internet Cannot be Trusted – Beamsplitters, Backdoors, and Broken Promises</a></h2>
+                    <div class="article_card__meta">
+                      <div class="article_card__author">Derek Zimmer</div>
+                      <div class="article_card__date">JUL 25, 2018</div>
+                    </div>
+                    <ul class="article_card__categories category_link__list">
+                      <li class="category_link__item"><a class="category_link" href="#">Governments</a></li>
+                      <li class="category_link__item"><a class="category_link" href="#">Networking</a></li>
+                      <li class="category_link__item"><a class="category_link" href="#">Open Source</a></li>
+                      <li class="category_link__item"><a class="category_link" href="#">Privacy</a></li>
+                      <li class="category_link__item"><a class="category_link" href="#">Security</a></li>
+                    </ul>
+                    <div class="article_card__comments"><a class="comment_counter" href="#">
+                        <div class="comment_counter__value">0</div>
+                        <div class="comment_counter__icon"> 
+                          <svg class="icon icon_comment ">
+                            <use xlink:href="./images/sprite/sprite.svg#comment"></use>
+                          </svg>
+                        </div></a></div>
                   </div>
-                  <ul class="article-card__categories category-link__list">
-                    <li class="category-link__item"><a class="category-link" href="#">Governments</a></li>
-                    <li class="category-link__item"><a class="category-link" href="#">Networking</a></li>
-                    <li class="category-link__item"><a class="category-link" href="#">Open Source</a></li>
-                    <li class="category-link__item"><a class="category-link" href="#">Privacy</a></li>
-                    <li class="category-link__item"><a class="category-link" href="#">Security</a></li>
-                  </ul>
-                  <div class="article-card__comments"><a class="comment-counter" href="#">
-                      <div class="comment-counter__value">0</div>
-                      <div class="comment-counter__icon"> 
-                        <svg>
-                          <use xlink:href="./images/sprite/sprite.svg#comment"></use>
-                        </svg>
-                      </div></a></div>
-                </div>
-              </article>
-              <article class="article-card">
-                <picture class="article-card__picture"><img class="lazy article-card__img" alt="" data-src="./images/article2.jpg"></picture>
-                <div class="article-card__content"> 
-                  <h2 class="article-card__title"><a class="article-card__link" href="#">How to get cheaper flights using a VPN</a></h2>
-                  <div class="article-card__meta">
-                    <div class="article-card__author">Jayson</div>
-                    <div class="article-card__date">JUL 24, 2018</div>
+                </article>
+                <article class="article_card">
+                  <picture class="article_card__picture">
+                    <source srcset="./images/article2.jpg.webp" type="image/webp">
+                    <source srcset="./images/article2.jpg" type="image/jpg"><img class="article_card__img" src="./images/article2.jpg" alt="">
+                  </picture>
+                  <div class="article_card__content"> 
+                    <h2 class="article_card__title"><a class="article_card__link" href="#">How to get cheaper flights using a VPN</a></h2>
+                    <div class="article_card__meta">
+                      <div class="article_card__author">Jayson</div>
+                      <div class="article_card__date">JUL 24, 2018</div>
+                    </div>
+                    <ul class="article_card__categories category_link__list">
+                      <li class="category_link__item"><a class="category_link" href="#">Guides</a></li>
+                    </ul>
+                    <div class="article_card__comments"><a class="comment_counter" href="#">
+                        <div class="comment_counter__value">0</div>
+                        <div class="comment_counter__icon"> 
+                          <svg class="icon icon_comment ">
+                            <use xlink:href="./images/sprite/sprite.svg#comment"></use>
+                          </svg>
+                        </div></a></div>
                   </div>
-                  <ul class="article-card__categories category-link__list">
-                    <li class="category-link__item"><a class="category-link" href="#">Guides</a></li>
-                  </ul>
-                  <div class="article-card__comments"><a class="comment-counter" href="#">
-                      <div class="comment-counter__value">0</div>
-                      <div class="comment-counter__icon"> 
-                        <svg>
-                          <use xlink:href="./images/sprite/sprite.svg#comment"></use>
-                        </svg>
-                      </div></a></div>
-                </div>
-              </article>
-              <article class="article-card">
-                <picture class="article-card__picture"><img class="lazy article-card__img" alt="" data-src="./images/article3.jpg"></picture>
-                <div class="article-card__content"> 
-                  <h2 class="article-card__title"><a class="article-card__link" href="#">Net Neutrality was repealed, but the fight is far from over</a></h2>
-                  <div class="article-card__meta">
-                    <div class="article-card__author">Chris Miller</div>
-                    <div class="article-card__date">JUL 22, 2018</div>
+                </article>
+                <article class="article_card">
+                  <picture class="article_card__picture">
+                    <source srcset="./images/article3.jpg.webp" type="image/webp">
+                    <source srcset="./images/article3.jpg" type="image/jpg"><img class="article_card__img" src="./images/article3.jpg" alt="">
+                  </picture>
+                  <div class="article_card__content"> 
+                    <h2 class="article_card__title"><a class="article_card__link" href="#">Net Neutrality was repealed, but the fight is far from over</a></h2>
+                    <div class="article_card__meta">
+                      <div class="article_card__author">Chris Miller</div>
+                      <div class="article_card__date">JUL 22, 2018</div>
+                    </div>
+                    <ul class="article_card__categories category_link__list">
+                      <li class="category_link__item"><a class="category_link" href="#">Governments</a></li>
+                      <li class="category_link__item"><a class="category_link" href="#">Net Neutrality</a></li>
+                      <li class="category_link__item"><a class="category_link" href="#">News</a></li>
+                    </ul>
+                    <div class="article_card__comments"><a class="comment_counter" href="#">
+                        <div class="comment_counter__value">0</div>
+                        <div class="comment_counter__icon"> 
+                          <svg class="icon icon_comment ">
+                            <use xlink:href="./images/sprite/sprite.svg#comment"></use>
+                          </svg>
+                        </div></a></div>
                   </div>
-                  <ul class="article-card__categories category-link__list">
-                    <li class="category-link__item"><a class="category-link" href="#">Governments</a></li>
-                    <li class="category-link__item"><a class="category-link" href="#">Net Neutrality</a></li>
-                    <li class="category-link__item"><a class="category-link" href="#">News</a></li>
-                  </ul>
-                  <div class="article-card__comments"><a class="comment-counter" href="#">
-                      <div class="comment-counter__value">0</div>
-                      <div class="comment-counter__icon"> 
-                        <svg>
-                          <use xlink:href="./images/sprite/sprite.svg#comment"></use>
-                        </svg>
-                      </div></a></div>
-                </div>
-              </article>
-              <div class="more-btn">
+                </article>
+              </div>
+              <div class="more_btn">
                 <div class="btn btn--bordered">older posts</div>
               </div>
             </main>
             <aside class="blog__sidebar">
-              <div class="sidebar-widget">
+              <div class="sidebar_widget">
                 <form action="#" method="post"> 
-                  <div class="icon-input">
-                    <div class="icon-input__icon">
-                      <svg>
+                  <div class="icon_input">
+                    <div class="icon_input__icon">
+                      <svg class="icon icon_search ">
                         <use xlink:href="./images/sprite/sprite.svg#search"></use>
                       </svg>
                     </div>
-                    <div class="icon-input__field">
+                    <div class="icon_input__field">
                       <div class="form_input">
                         <div class="form_input__field">
                           <input class="form_input__element" type="text" placeholder="Search blog" value="">
@@ -211,52 +232,52 @@
                   </div>
                 </form>
               </div>
-              <div class="sidebar-widget"> 
-                <div class="sidebar-widget__title widget-title"> 
-                  <div class="widget-title__icon"> 
-                    <svg>
+              <div class="sidebar_widget"> 
+                <div class="sidebar_widget__title widget_title"> 
+                  <div class="widget_title__icon"> 
+                    <svg class="icon icon_light ">
                       <use xlink:href="./images/sprite/sprite.svg#light"></use>
                     </svg>
                   </div>
-                  <div class="widget-title__title">Announcements</div>
+                  <div class="widget_title__title">Announcements</div>
                 </div>
-                <div class="sidebar-widget__list">
-                  <ul class="widget-list"> 
-                    <li class="widget-list__item"> <a class="widget-list__link" href="#">Upcoming Changes (Live Chat, Less Censorship, More Access)</a></li>
-                    <li class="widget-list__item"> <a class="widget-list__link" href="#">New Servers (US Washington DC)</a></li>
-                    <li class="widget-list__item"> <a class="widget-list__link" href="#">New Servers (US Denver)</a></li>
-                    <li class="widget-list__item"> <a class="widget-list__link" href="#">Open Source: Releasing the PIA iOS Client</a></li>
-                    <li class="widget-list__item"> <a class="widget-list__link" href="#">Opera Extension is now available</a></li>
+                <div class="sidebar_widget__list">
+                  <ul class="widget_list"> 
+                    <li class="widget_list__item"> <a class="widget_list__link" href="#">Upcoming Changes (Live Chat, Less Censorship, More Access)</a></li>
+                    <li class="widget_list__item"> <a class="widget_list__link" href="#">New Servers (US Washington DC)</a></li>
+                    <li class="widget_list__item"> <a class="widget_list__link" href="#">New Servers (US Denver)</a></li>
+                    <li class="widget_list__item"> <a class="widget_list__link" href="#">Open Source: Releasing the PIA iOS Client</a></li>
+                    <li class="widget_list__item"> <a class="widget_list__link" href="#">Opera Extension is now available</a></li>
                   </ul>
                 </div>
               </div>
-              <div class="sidebar-widget"> 
-                <div class="sidebar-widget__title widget-title"> 
-                  <div class="widget-title__icon"> 
-                    <svg>
+              <div class="sidebar_widget"> 
+                <div class="sidebar_widget__title widget_title"> 
+                  <div class="widget_title__icon"> 
+                    <svg class="icon icon_rss ">
                       <use xlink:href="./images/sprite/sprite.svg#rss"></use>
                     </svg>
                   </div>
-                  <div class="widget-title__title">Popular posts</div>
+                  <div class="widget_title__title">Popular posts</div>
                 </div>
-                <div class="sidebar-widget__list">
-                  <ul class="widget-list"> 
-                    <li class="widget-list__item"> <a class="widget-list__link" href="#">The Gift of Privacy</a></li>
-                    <li class="widget-list__item"> <a class="widget-list__link" href="#">UK High Court Censors Many Links To Popcorn Time: Useless, Dangerous Gesture</a></li>
-                    <li class="widget-list__item"> <a class="widget-list__link" href="#">About the PIA Client Security and VPN Security in General</a></li>
-                    <li class="widget-list__item"> <a class="widget-list__link" href="#">A Private Net Is Just As Fundamental A Right As Freedom Of Speech</a></li>
-                    <li class="widget-list__item"> <a class="widget-list__link" href="#">Wiretapping Today Just Doesn’t Mean What The Word Meant In The 1990s, So Don’t Fall For That Lie</a></li>
+                <div class="sidebar_widget__list">
+                  <ul class="widget_list"> 
+                    <li class="widget_list__item"> <a class="widget_list__link" href="#">The Gift of Privacy</a></li>
+                    <li class="widget_list__item"> <a class="widget_list__link" href="#">UK High Court Censors Many Links To Popcorn Time: Useless, Dangerous Gesture</a></li>
+                    <li class="widget_list__item"> <a class="widget_list__link" href="#">About the PIA Client Security and VPN Security in General</a></li>
+                    <li class="widget_list__item"> <a class="widget_list__link" href="#">A Private Net Is Just As Fundamental A Right As Freedom Of Speech</a></li>
+                    <li class="widget_list__item"> <a class="widget_list__link" href="#">Wiretapping Today Just Doesn’t Mean What The Word Meant In The 1990s, So Don’t Fall For That Lie</a></li>
                   </ul>
                 </div>
               </div>
-              <div class="sidebar-widget">
-                <div class="sidebar-widget__banner"><a class="banner-link" href="#"><img class="lazy" data-src="./images/sidebar-banner.jpg" alt=""></a></div>
+              <div class="sidebar_widget">
+                <div class="sidebar_widget__banner"><a class="banner_link" href="#"><img src="./images/sidebar-banner.jpg" alt=""></a></div>
               </div>
-              <div class="sidebar-widget">
-                <div class="sidebar-widget__title widget-title"> 
-                  <div class="widget-title__title">Tag cloud			</div>
+              <div class="sidebar_widget">
+                <div class="sidebar_widget__title widget_title"> 
+                  <div class="widget_title__title">Tag cloud			</div>
                 </div>
-                <div class="sidebar-widget__tagcloud">
+                <div class="sidebar_widget__tagcloud">
                   <ul class="tagcloud"> 
                     <li class="tagcloud__item"> <a class="tagcloud__link tagcloud__link--medium" href="#">medium tag</a></li>
                     <li class="tagcloud__item"> <a class="tagcloud__link tagcloud__link--xsmall" href="#">xsmall tag</a></li>
@@ -283,7 +304,6 @@
           </div>
         </div>
       </div>
-      <footer class="footer"></footer>
     </div>
   <script defer src="js/app.js"></script></body>
 </html>

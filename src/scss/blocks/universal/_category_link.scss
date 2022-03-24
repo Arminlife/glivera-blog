@@ -1,14 +1,15 @@
-.category-link {
+.category_link {
 	font-size: 1.2rem;
 	color: $color_link_accent;
 	text-transform: uppercase;
-	transition: all 0.2s linear;
+	transition: all 0.3s linear;
 	&:hover {
 		color: $color_link_focus;
 	}
 	&__list {
 		display: flex;
 		align-items: center;
+		flex-wrap: wrap;
 	}
 	&__item {
 		position: relative;

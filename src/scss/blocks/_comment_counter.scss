@@ -1,9 +1,9 @@
-.comment-counter {
+.comment_counter {
 	display: inline-flex;
 	align-items: center;
 	color: #889099;
 	font-size: 1.4rem;
-	transition: color 0.2s linear;
+	transition: color 0.3s linear;
 	&:hover {
 		color: $color_link_accent;
 	}

@@ -13,7 +13,7 @@
 		color: $color_link_accent;
 		border: 1px solid $color_link_accent;
 		border-radius: 3rem;
-		transition: all 0.2s linear;
+		transition: all 0.3s linear;
 		background-color: #fff;
 		&:hover {
 			background-color: $color_link_accent;
@@ -21,8 +21,7 @@
 		}
 	}
 }
-.more-btn {
-	margin: 4rem 0;
+.more_btn {
 	text-align: center;
 	.btn {
 		min-width: 26rem;
