@@ -77,6 +77,26 @@ block vars
 	-		{title: 'A Private Net Is Just As Fundamental A Right As Freedom Of Speech', link:'#'},
 	-		{title: 'Wiretapping Today Just Doesn’t Mean What The Word Meant In The 1990s, So Don’t Fall For That Lie', link:'#'}
 	-	]
+	- tagCloud = [
+	-		{title: 'medium tag', link:'#', size: 'medium'},
+	-		{title: 'xsmall tag', link:'#', size: 'xsmall'},
+	-		{title: 'normal tag', link:'#', size: 'normal'},	
+	-		{title: 'small tag', link:'#', size: 'small'},
+	-		{title: 'exta large tag', link:'#', size: 'xlarge'},
+	-		{title: 'medium tag', link:'#', size: 'medium'},
+	-		{title: 'medium tag', link:'#', size: 'medium'},	
+	-		{title: 'large tag', link:'#', size: 'large'},
+	-		{title: 'small tag', link:'#', size: 'small'},
+	-		{title: 'medium tag', link:'#', size: 'medium'},
+	-		{title: 'xsmall tag', link:'#', size: 'xsmall'},
+	-		{title: 'normal tag', link:'#', size: 'normal'},	
+	-		{title: 'small tag', link:'#', size: 'small'},
+	-		{title: 'exta large tag', link:'#', size: 'xlarge'},
+	-		{title: 'medium tag', link:'#', size: 'medium'},
+	-		{title: 'medium tag', link:'#', size: 'medium'},	
+	-		{title: 'large tag', link:'#', size: 'large'},
+	-		{title: 'small tag', link:'#', size: 'small'},	
+	-	]	
 block content_block
 	.container 
 		.simple-header.blog__header 
@@ -158,6 +178,8 @@ block content_block
 				.sidebar-widget
 					.sidebar-widget__title.widget-title 
 						.widget-title__title Tag cloud			
-					.sidebar-widget__banner
-						a.banner-link(href="#")
-							img.lazy(data-src="./images/tagcloud.jpg", alt="")
+					.sidebar-widget__tagcloud
+						ul.tagcloud 
+							each tag in tagCloud 
+								li.tagcloud__item 
+									a(href=tag.link class='tagcloud__link tagcloud__link--' + tag.size)= tag.title
