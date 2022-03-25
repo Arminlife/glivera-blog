@@ -6,20 +6,20 @@
 	&:hover {
 		color: $color_link_focus;
 	}
-	&__list {
-		display: flex;
-		align-items: center;
-		flex-wrap: wrap;
+}
+.category_link__list {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.category_link__item {
+	position: relative;
+	margin-right: 0.3rem;
+	&:last-child {
+		margin-right: 0;
 	}
-	&__item {
-		position: relative;
-		margin-right: 0.3rem;
-		&:last-child {
-			margin-right: 0;
-		}
-		&:not(:last-child):after {
-			content: ",";
-			color: $color_link_accent;
-		}
+	&:not(:last-child):after {
+		content: ",";
+		color: $color_link_accent;
 	}
 }

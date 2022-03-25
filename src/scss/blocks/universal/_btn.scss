@@ -6,19 +6,19 @@
 	text-transform: uppercase;
 	font-size: 1.4rem;
 	font-weight: 500;
-  letter-spacing: 0.05rem;
+	letter-spacing: 0.05rem;
 	padding: 0 3rem;
 	cursor: pointer;
-	&--bordered {
-		color: $color_link_accent;
-		border: 1px solid $color_link_accent;
-		border-radius: 3rem;
-		transition: all 0.3s linear;
-		background-color: #fff;
-		&:hover {
-			background-color: $color_link_accent;
-			color: #fff;
-		}
+}
+.btn--bordered {
+	color: $color_link_accent;
+	border: 1px solid $color_link_accent;
+	border-radius: 3rem;
+	transition: all 0.3s linear;
+	background-color: #fff;
+	&:hover {
+		background-color: $color_link_accent;
+		color: #fff;
 	}
 }
 .more_btn {

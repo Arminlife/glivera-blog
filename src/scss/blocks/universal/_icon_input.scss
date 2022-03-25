@@ -1,27 +1,21 @@
 .icon_input {
 	position: relative;
-	&__icon {
-    position: absolute;
-    left: 1.8rem;
-    top: 2rem;
-    width: 2rem;
-    height: 2rem;
-		svg {
-			width: 100%;
-			height: 100%;
-		}
-	}
-	&__field {
-		.form_input {
-			&__element {
-				height: 6rem;
-				padding-left: 6rem;
-				font-size: 1.8rem;
-				font-weight: 300;
-				&::-webkit-input-placeholder {
-					color: #22252e;
-				}
-			}
+}
+.icon_input__icon {
+	position: absolute;
+	left: 1.8rem;
+	top: 2rem;
+	width: 2rem;
+	height: 2rem;
+}
+.icon_input__field {
+	.form_input__element {
+		height: 6rem;
+		padding-left: 6rem;
+		font-size: 1.8rem;
+		font-weight: 300;
+		&::-webkit-input-placeholder {
+			color: #22252e;
 		}
 	}
 }
